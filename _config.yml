@@ -1,6 +1,6 @@
 # Site settings
 title: Binary.com Developers
-url: "https://developers.binary.com"
+url: "https://tahmi123.github.io/web"
 twitter_username: binarydotcom
 github_username:  binary-com
 
@@ -11,4 +11,4 @@ collections:
   pages:
     output: true
     permalink: /web
-    baseurl: tahmi123.github.io/web
+    
