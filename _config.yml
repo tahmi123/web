@@ -10,5 +10,5 @@ markdown: kramdown
 collections:
   pages:
     output: true
-    permalink: /web
+    permalink: ""
     
