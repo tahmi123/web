@@ -12,7 +12,7 @@ require.config({
 
 var LiveApi = window['binary-live-api'].LiveApi;
 
-var defaultAppId = 1089;
+var defaultAppId = 11280;
 var defaultApiUrl = 'wss://ws.binaryws.com/websockets/v3';
 
 var appId = localStorage.getItem('appId') || defaultAppId;
@@ -367,7 +367,7 @@ require(["docson/docson", "lib/jquery", "lib/select2.min"], function(docson) {
     $('#api-call-selector').select2().on('change', function() {
         var verStr = 'v3',
             apiStr = $('#api-call-selector').val(),
-            urlPath = '/config/' + verStr + '/' + apiStr + '/',
+            urlPath = '/web/config/' + verStr + '/' + apiStr + '/',
             requestSchemaUrl = urlPath + 'send.json',
             responseSchemaUrl = urlPath + 'receive.json',
             exampleJsonUrl = urlPath + 'example.json';
