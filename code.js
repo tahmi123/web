@@ -12,7 +12,7 @@ require.config({
 
 var LiveApi = window['binary-live-api'].LiveApi;
 
-var defaultAppId = 1089;
+var defaultAppId = 11280;
 var defaultApiUrl = 'wss://ws.binaryws.com/websockets/v3';
 
 var appId = localStorage.getItem('appId') || defaultAppId;
