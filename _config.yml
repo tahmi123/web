@@ -10,4 +10,4 @@ markdown: kramdown
 collections:
   pages:
     output: true
-    permalink: /:path/
+    permalink: /web
