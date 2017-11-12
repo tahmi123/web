@@ -1,35 +1,18 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "title": "Tick Stream Request",
-  "description": "Initiate a continuous stream of spot price updates for a given symbol",
+  "definitions": {}, 
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "$id": "http://example.com/example.json", 
+  "type": "object", 
   "properties": {
     "ticks": {
-      "oneOf": [
-          { "type": "string", "pattern": "^\\w{32,128}$" },
-          {
-            "type":"array",
-              "items": {
-                "type": "string", "pattern": "^\\w{32,128}$"
-              }
-          }
-        ],
-      "description": "The short symbol name or array of symbols. E.x [\"frxUSDJPY\", \"R_50\"]",
-      "required": "1"
-    },
-    "passthrough": {
-      "type": "object",
-      "description": "Optional field, used to pass data through the websocket, which may be retrieved via the echo_req output field."
-    },
-    "subscribe": {
-      "type": "integer",
-      "description": "If set to 1, will send updates whenever the price changes",
-      "pattern": "^1$"
-    },
-    "req_id": {
-      "type": "integer",
-      "description": "Optional field to map request to response"
+      "$id": "/properties/ticks", 
+      "type": "string", 
+      "title": "The Ticks Schema.", 
+      "description": "An explanation about the purpose of this instance.", 
+      "default": "", 
+      "examples": [
+        "R_50"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }
