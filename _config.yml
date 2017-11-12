@@ -3,6 +3,7 @@ title: Binary.com Developers
 url: "https://developers.binary.com"
 twitter_username: binarydotcom
 github_username:  binary-com
+baseurl: tahmi123.github.io/web
 
 # Build settings
 markdown: kramdown
